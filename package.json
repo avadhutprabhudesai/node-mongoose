@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest --watchAll",
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
     "start": "nodemon src/index.js localhost ",
@@ -34,8 +34,10 @@
     "@babel/eslint-parser": "^7.13.8",
     "@babel/eslint-plugin": "^7.13.0",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.13.9",
     "babel-loader": "^8.2.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-minify": "^0.5.1",
     "clean-webpack-plugin": "^3.0.0",
     "commitizen": "^4.2.3",
@@ -69,6 +71,11 @@
     }
   },
   "dependencies": {
-    "ramda": "^0.27.1"
+    "@babel/runtime": "^7.17.2",
+    "core-js": "^3.21.0",
+    "mocha": "^9.2.0",
+    "mongoose": "^6.2.2",
+    "ramda": "^0.27.1",
+    "regenerator-runtime": "^0.13.9"
   }
 }
